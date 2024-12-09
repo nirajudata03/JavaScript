@@ -100,4 +100,27 @@ const arrayObject = [
 // console.log(Object.values(tinderUser));
 // console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty(`isLoggedIn`));
+// console.log(tinderUser.hasOwnProperty(`isLoggedIn`));
+
+
+const jasonCourse = {
+    courseName: "jason",
+    coursePrise: "free",
+    courseInstructor: "niraj"
+}
+
+const {courseInstructor: instructor} = jasonCourse
+const {coursePrise: prise} = jasonCourse
+
+// console.log(courseInstructor);
+console.log(instructor);
+console.log(prise);
+
+// +++++ jason +++++
+
+// {
+//     "name": "niraj",
+//     "age": "20"
+// }
+
+
