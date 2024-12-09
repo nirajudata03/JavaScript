@@ -21,9 +21,19 @@ const jsUser = {
 // console.log(jsUser["age"]);
 // console.log(jsUser);
 // console.log(typeof mysym);
+// Object.freeze(jsUser)
 
 
 jsUser.newObject = function(){
     console.log(`Hello Js user:`);
     
 }
+
+jsUser.anotherNewObject = function(){
+    console.log(`Hello JS user: ${this.name}`);
+    
+}
+
+console.log(jsUser.newObject());
+console.log(jsUser.anotherNewObject());
+
