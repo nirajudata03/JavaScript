@@ -22,3 +22,40 @@ function twoNumberAddition(num1, num2){
 }
 const total = twoNumberAddition(15, 30)
 // console.log(total);
+
+
+const objectAndFunction = {
+    name: "Rohit",
+    userId: "rohit45",
+    age: 37,
+    carrier: "Cricketer"
+}
+
+function functionWithObject(anyObject){
+    return anyObject.userId
+}
+// console.log(functionWithObject(objectAndFunction));
+
+
+const functionAndArray = [100, 200, 300, 400]
+
+function functionWithArra(anyArray){
+    return anyArray[2]
+}
+// console.log(functionWithArra(functionAndArray));
+
+function calculateCartPrise(var1 , var2, ...val1){
+    return val1
+}
+// console.log(calculateCartPrise(45, 65, 25, 95));
+
+const names = {
+    firstName: "Hanuman",
+    secondName: "Ram"
+}
+
+function nameOfHero(anyName){
+    console.log(`${anyName.firstName} and ${anyName.secondName} are best friends forever...`);
+    
+}
+nameOfHero(names)
