@@ -55,7 +55,21 @@ const names = {
 }
 
 function nameOfHero(anyName){
-    console.log(`${anyName.firstName} and ${anyName.secondName} are best friends forever...`);
+    // console.log(`${anyName.firstName} and ${anyName.secondName} are best friends forever...`);
     
 }
 nameOfHero(names)
+
+
+// ++++++++++ Some Examples ++++++++++
+
+const animalName = ["Elepant", "Tiger", "Lion", "Cheeta", "Dear", "Bear", "Fox",  "Snek",]
+
+function animalNameCheck(animal){
+    if(animal[2] === "Lion"){
+        console.log(`I fond it`);
+        return
+    }
+    return animal
+}
+animalNameCheck(animalName)
