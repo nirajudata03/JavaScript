@@ -72,4 +72,4 @@ function animalNameCheck(animal){
     }
     return animal
 }
-animalNameCheck(animalName)
+// animalNameCheck(animalName)
