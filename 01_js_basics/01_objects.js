@@ -122,5 +122,3 @@ console.log(prise);
 //     "name": "niraj",
 //     "age": "20"
 // }
-
-
