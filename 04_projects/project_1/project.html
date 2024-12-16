@@ -4,10 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Project with Chai aur code</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <style>
+        .heading{
+            font-size: 30px;
+            text-align: center;
+            padding-top: 5vh
+        }
+        .button_section{
+            display: flex;
+            flex-direction: column;
+            margin-inline: 15vw;
+            gap: 1vh;
+        }
+
+        .button{
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        #purple{
+            background-color: purple;
+        }
+        #gray{
+            background-color: gray;
+        }
+        #orange{
+            background-color: orange;
+        }
+        #blue{
+            background-color: blue;
+        }
+        #red{
+            background-color: red;
+        }
     
+    </style>
+</head>
+<body style="background-color: #212121; color: white;">
+    <h1 class="heading">Changing background color by clicking on buttons.</h1>
+    <div class="button_section">
+        <button class="button" id="purple">Click here</button>
+        <button class="button" id="gray">Click here</button>
+        <button class="button" id="orange">Click here</button>
+        <button class="button" id="blue">Click here</button>
+        <button class="button" id="red">Click here</button>
+    </div>
+    <h1>Try clicking on one of the colors above
+        to change the background color of this page!</h1>
 
     <script src="code.js"></script>
 </body>
