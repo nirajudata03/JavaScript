@@ -20,22 +20,24 @@
             justify-content: center;
         }
         .card {
-            height: 60vh;
-            width: 30vw;
+            height: 40vh;
+            width: 40vw;
             background-color: #fff;
-            border-radius: 10px;
+            border-radius: 15px;
+            overflow: hidden;
         }
         .image {
-            height: 60%;
+            height: 50%;
             width: 100%;
             background-color: aqua;
+            
         }
     </style>
 </head>
 <body>
     <div class="section">
         <div class="card">
-            <div class="image">
+            <div class="image-container">
 
             </div>
             <div class="information">
@@ -57,10 +59,17 @@
             
             
         }
-        return data
+        const img = document.createElement('img')
+        let imageUrl = data.avatar_url
+        console.log(imageUrl);
+        
+        img.src = imageUrl;
+        img.height = 300;
+        img.width = 400
+
+        const container = document.querySelector('.image-container')
+        container.appendChild(img)
     }
-    requst.send()  
-    console.log(data.id);
-    
+    requst.send()   
 </script>
 </html>
